@@ -30,7 +30,8 @@
       }
       img.header {
         display: block;
-        width: 300px;
+        width: auto;
+        max-width: 50%;
         margin-right: auto;
         margin-left: auto;
       }
@@ -38,6 +39,42 @@
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
+      }
+      .games {
+        flex-direction: row;
+        justify-content: left;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 40px;
+      }
+      .game-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+      }
+      .game-logo {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 30px;
+      }
+      .game-button {
+        width: 250px;
+        height: 50px;
+        position: relative;
+        top: -54px;
+        background-color: rgba(252, 0, 0, 0.589);
+        border: none;
+        color: black;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .header-text {
+        text-align: center;
+        color:black;
+        font-size: 30px;
+        font-family: "Arial", serif;
       }
     </style>
   </head>
@@ -47,15 +84,25 @@
     <a href="#section-css">CSS</a>
     <a href="https://google.com" target="_blank">Google</a>
     
+    
     <div class="header">
       <img src="images/header.png" alt="Header reading: Welcome to the best site on the DCPS network!" class="header">
     </div>
-    <a href="/drweb/chapter1/index.html">DELTARUNE Chapter 1</a>
+    
+    <div class="header-text">
+      <h2>Find Your Favorate Game!</h2>
+    </div>
 
-    <h2>HTML</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rerum blanditiis cupiditate, delectus vero officia repellat distinctio ea repellendus minus nihil soluta dignissimos deserunt eligendi, doloremque consequatur, earum ut! Quibusdam, totam. Nihil fugit vero voluptatem neque sed odio atque similique repudiandae commodi hic, facilis eligendi mollitia, recusandae dolores. Excepturi, laborum soluta laboriosam placeat laudantium tempore fugit. Amet cupiditate repellat illum iste ab, iusto quae voluptate exercitationem ullam eligendi accusantium! Eligendi quis dolor aliquid, iure praesentium eius aliquam autem perspiciatis? Doloribus officiis facilis eaque? Quaerat voluptas, dolorum sapiente vitae dolor hic? Alias repellendus cupiditate optio, quaerat adipisci rem, tenetur magnam incidunt expedita doloremque hic porro culpa minus eligendi quas modi fugiat. Magni assumenda harum soluta ab rerum et debitis. Quo, animi, labore obcaecati delectus sunt maiores minus ipsum a consequuntur autem tempora laboriosam, quia eius iste perferendis quaerat enim totam dicta consectetur! Saepe minima quia laudantium praesentium esse illo ea nam at? Magni quidem, odit iusto ullam fuga culpa suscipit corrupti rem nostrum reprehenderit modi obcaecati, ducimus earum quo minima distinctio. Ipsam facilis ea voluptatum. Minima aliquid quasi quas nobis repellendus perspiciatis nostrum obcaecati eius impedit qui? Officia dolor, eligendi doloribus voluptatum excepturi qui amet illo veritatis velit eaque facilis adipisci.</p>
-    <h2 id="section-css">CSS</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure magnam adipisci, odit quasi ad veniam veritatis odio recusandae excepturi perferendis unde? Culpa consectetur officia nisi quidem ad nostrum esse quia illo aperiam reiciendis temporibus ullam consequatur itaque neque, alias illum cum eaque voluptas! Veniam repudiandae officiis vel assumenda exercitationem, consequatur doloribus minus distinctio ab natus deserunt! Delectus quas officiis, ipsum itaque dignissimos ut possimus nemo, blanditiis alias reiciendis repudiandae necessitatibus eum nam rerum! Accusamus natus, soluta odit assumenda distinctio sit fuga rem, doloremque expedita quibusdam odio, earum minima obcaecati laborum! Dolore tempora debitis harum nemo cupiditate veritatis, voluptates, eius doloribus minima explicabo, amet nostrum soluta officia. Sapiente neque dolores architecto beatae fugiat exercitationem minus, reiciendis libero rem nostrum totam voluptatum ratione amet dolore. Culpa ipsum odit cupiditate ipsa, incidunt adipisci itaque in alias nihil voluptate, amet, modi a dignissimos optio reiciendis totam maiores voluptatem facere quibusdam quia officia. Recusandae enim, aspernatur sapiente quos temporibus, neque, vero eligendi eum quae hic saepe odio cumque dolorem voluptatum officia velit accusamus iure eaque corporis commodi perspiciatis dolore veniam nam nulla. Modi perspiciatis exercitationem reiciendis molestias maiores at fugiat, est eos temporibus enim blanditiis quaerat saepe, dolores vero ex, veniam minima rerum odio.</h2>
-    <a href="#">Jump To Top</a>
+    <div class="games">
+      <div class="game-item">
+        <a href="/drweb/chapter1/index.html"><img src="images/chapter1.png" alt="Deltarune chapter 1 logo" class="game-logo"></a>
+        <a href="/drweb/chapter1/index.html"><button class="game-button">DELTARUNE Chapter 1</button></a>
+      </div>
+      <div class="game-item">
+        <a href="/drweb/chapter2/index.html"><img src="images/chapter2.png" alt="Deltarune chapter 2 logo" class="game-logo"></a>
+        <a href="/drweb/chapter2/index.html"><button class="game-button">DELTARUNE Chapter 2</button></a>
+      </div>
+      
+    </div>
   </body>
 </html>
